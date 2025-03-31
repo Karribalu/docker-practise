@@ -30,4 +30,6 @@
 <li> docker cp <i>source</i> <i>dest </i> </li>
 &nbsp &nbsp Copies files from system to container
 &&nbsp &nbsp ex: docker cp file interesting_bartik:/ OR docker cp interesting_bartik:/file test
+<li> docker build -t sample:tag .</li>
+&nbsp &nbsp Adds a tag to the docker image with the name sample
 </ol>
