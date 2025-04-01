@@ -33,3 +33,17 @@
 <li> docker build -t sample:tag .</li>
 &nbsp &nbsp Adds a tag to the docker image with the name sample
 </ol>
+
+install docker in ec2
+
+sudo yum update -y
+sudo yum -y install docker
+sudo service docker start
+
+sudo usermod -a -G docker ec2-user
+
+logout and login
+
+sudo systemctl enable docker
+
+docker version
