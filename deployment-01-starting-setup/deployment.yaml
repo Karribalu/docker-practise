@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-kube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:  
+      app: first-kube
+  template:
+    metadata:
+      labels:
+        app: first-kube
+    spec:
+      containers:
+        - name: first-node
+          image: bala2314/node-example-1
